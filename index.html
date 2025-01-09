@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Enter the Nexus</h1>
+    </header>
+
+    <main>
+        <section id="game-list" class="fade-in">
+            <h2 class="section-title">Game Selection</h2>
+            <ul class="game-grid">
+                <li class="game-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/tic-tac-toe.png" alt="Tic-Tac-Toe">
+                            <h3>Tic-Tac-Toe</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>The classic game of strategy! Get three in a row to win against the computer or a friend.</p>
+                            <a href="Tic-Tac-Toe/tictactoe.html" class="play-button">Play Now</a>
+                            <button class="how-to-play-button" data-game="tic-tac-toe">How To Play</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="game-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/ultimate-tic-tac-toe.png" alt="Ultimate Tic-Tac-Toe">
+                            <h3>Ultimate Tic-Tac-Toe</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Ultimate Tic-Tac-Toe</h3>
+                            <p>Master the ultimate strategy game! This isn't your average tic-tac-toe – you'll be playing on a 9x9 board, with each small grid influencing the next.</p>
+                            <a href="Ultimate Tic-Tac-Toe/ultimate_tictactoe.html" class="play-button">Play Now</a>
+                            <button class="how-to-play-button" data-game="ultimate-tic-tac-toe">How To Play</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="section-wrapper">
+        <div class="section-container">
+            <section id="contact" class="contact fade-in">
+                <h2>Contact Me</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    
+                    <input type="hidden" name="access_key" value="755ac9be-792c-4395-ab97-9637ebeb1950">
+    
+                    <input type="submit" value="Send">
+                    <div id="form-message" style="display: none; color: #00ffff; margin-top: 20px;"></div>
+    
+                </form>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <footer class="fade-in">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>More Contacts of Mine</h4>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/md.maruf.hossain.574553/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://github.com/Maruf-Hossain2" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://discord.com/channels/maruf_hossain2" target="_blank" class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Game Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>    
+
+    <!-- Modal for Rules -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-rules"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="particles"></div> </body>
+</html>

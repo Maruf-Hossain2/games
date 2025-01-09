@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cyber Tic-Tac-Toe</title>
+<link rel="stylesheet" href="tictactoe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="fireworks-container"></div>
+    <div class="confetti-container"></div>
+
+    <div class="game-container">
+        <div class="game-area">
+            <div class="title">
+                <span class="cyber-text">CYBER</span>
+                <span class="ttt-text">TIC-TAC-TOE</span>
+            </div>
+            <div id="current-player-turn" class="current-turn"></div>
+            <div class="board" id="board"></div>
+            <div class="message" id="message"></div>
+            <div class="buttons">
+                <button class="reset-btn" onclick="resetGame()">
+                    <i class="fas fa-sync-alt"></i> Next Round
+                </button>
+                <button class="name-btn" onclick="openNameModal()">
+                    <i class="fas fa-user-edit"></i> Change Names
+                </button>
+            </div>
+        </div>
+        <div class="scoreboard"></div> </div>
+
+    <!-- Modal for changing names -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-users"></i> Change Player Names</h2>
+            </div>
+            <div class="input-group">
+                <label for="player1Name">
+                    <i class="fas fa-user"></i> Player 1:
+                </label>
+                <input type="text" id="player1Name" placeholder="Enter name">
+            </div>
+            <div class="input-group">
+                <label for="player2Name">
+                    <i class="fas fa-user"></i> Player 2:
+                </label>
+                <input type="text" id="player2Name" placeholder="Enter name">
+            </div>
+            <div class="modal-buttons">
+                <button onclick="saveNames()">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button onclick="closeNameModal()">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="installBanner" class="install-banner" style="display: none;">
+        <p>Install this game to play offline! 
+           <button id="installBtn">Install Game</button>
+        </p>
+    </div>
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>

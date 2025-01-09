@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultimate Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="ultimate_tictactoe.css">
+</head>
+<body>
+    <div id="toast-message">
+        This is a toast message!
+        <button class="close-btn" onclick="hideToast()">×</button>
+    </div>    
+
+    <div class="game-container">
+        <div class="game-area">
+            <div class="title">
+                <span class="cyber-text">ULTIMATE</span>
+                <span class="ttt-text">TIC-TAC-TOE</span>
+            </div>
+            <div id="game-board" class="big-grid"></div>
+        </div>
+        <div class="right-panel">
+            <div id="current-player-turn" class="current-turn"></div>
+            <div class="scoreboard"></div>
+            <div id="game-status" class="message"></div>
+            <div class="buttons">
+                <button id="reset-button" class="reset-btn">
+                    <i class="fas fa-sync-alt"></i> Next Round
+                </button>
+                <button id="change-names" class="name-btn">
+                    <i class="fas fa-user-edit"></i> Change Names
+                </button>
+            </div>
+        </div>
+    </div>        
+
+    <!-- Modal for changing names -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-users"></i> Change Player Names</h2>
+            </div>
+            <div class="input-group">
+                <label for="player1Name">Player 1:</label>
+                <input type="text" id="player1Name" placeholder="Enter name">
+            </div>
+            <div class="input-group">
+                <label for="player2Name">Player 2:</label>
+                <input type="text" id="player2Name" placeholder="Enter name">
+            </div>
+            <div class="modal-buttons">
+                <button onclick="saveNames()">Save</button>
+                <button onclick="closeNameModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ultimate_tictactoe.js"></script>
+</body>
+</html>
