@@ -1,0 +1,51 @@
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# IDE files
+.idea/
+*.suo
+*.ntvs*
+*.csproj.user
+*.sln.dotSettings
+*.user
+*.userprefs
+*.tmproj
+
+# Build artifacts
+/build/
+/dist/
+/out/
+/target/
+*.class
+*.log
+*.pyc
+*.o
+*.obj
+*.dll
+*.exe
+*.war
+*.jar
+
+# Package manager files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Local configuration files
+.env
+config.local.js  # Or any other local configuration files you might have
+.env.local # if you're using create-react-app etc
+.env.development
+.env.test
+.env.production
+
+# Other commonly ignored files
+*.txt #Example: if you don't want to track temporary text files.
+
+# Add any other project-specific files to ignore.
